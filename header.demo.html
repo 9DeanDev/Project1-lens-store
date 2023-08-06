@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Demo</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <nav class="container">
+            <p>
+                <a href="" class="font-icon">
+                    <i class="fa-regular fa-user fa-lg"></i> Tài khoản
+                </a>
+            </p>
+            <p>
+                <a href="" class="font-icon" style="float: right;">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i> Giỏ hàng(0)     
+                </a>   
+                <a href="" class="font-icon" style="float: right;">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i> Tìm kiếm    
+                </a>
+            </p>
+        </nav>
+        <nav>
+            <h1>ANGEL EYES<br><h2>CONTACT LENS</h2></h1>
+            <ul id="main-menu">
+                <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="">LENS TRONG SUỐT</a></li>
+                <li><a href="">LENS LOẠN</a></li>
+                <li><a href="">LENS MÀU</a>
+                    <ul class="sub-menu">
+                        <li><a href="">KÍNH ÁP TRÒNG CẬP THỊ - LENS CẬN</a></li>
+                        <li><a href="">KÍNH ÁP TRÒNG LENS MÀU POLYHEMA 6-8H</a>
+                            <ul class="sub-menu">
+                                <li><a href="">NƯỚC NGÂM LENS</a></li>
+                                <li><a href="">NƯỚC NHỎ MẮT LENS</a></li>
+                                <li><a href="">KHAY ĐỰNG LENS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">KÍNH ÁP TRÒNG SILICOL HYDROGEL 24H</a></li>
+                        <li><a href="">LENS 1 NGÀY</a></li>
+                        <li><a href="">KÍNH GIÃN TRÒNG - LENS GIÃN TRÒNG</a></li>
+                        <li><a href="">KÍNH ÁP TRÒNG COSPLAY HALLOWEEN</a></li>
+                        <li><a href="">KÍNH ÁP TRÒNG THẨM MỸ</a></li>
+                        <li><a href="">SẢN PHẨM KHUYẾN MÃI</a></li>
+                    </ul>
+                </li>
+                <li><a href="">CHỌN LENS THEO MÀU</a>
+                    <ul class="sub-menu">
+                        <li><a href="">LENS XÁM</a></li>
+                        <li><a href="">LENS NÂU</a></li>
+                        <li><a href="">LENS CHOCO</a></li>
+                        <li><a href="">LENS ĐEN</a></li>
+                        <li><a href="">LENS XANH</a></li>
+                        <li><a href="">LENS ĐỎ</a></li>
+                        <li><a href="">LENS TÍM</a></li>
+                        <li><a href="">LENS TRẮNG</a></li>
+                    </ul>
+                </li>
+                <li><a href="">PHỤ KIỆN</a>
+                    <ul class="sub-menu">
+                        <li><a href="">NƯỚC NGÂM LENS</a></li>
+                        <li><a href="">NƯỚC NHỎ MẮT LENS</a></li>
+                        <li><a href="">KHAY ĐỰNG LENS</a></li>
+                    </ul>
+                </li>
+                <li><a href="">HỆ THỐNG CỬA HÀNG</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.sub-menu').parent('li').addClass('has-child')
+        })
+    </script>
+</body>
+</html>

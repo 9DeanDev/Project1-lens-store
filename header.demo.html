@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
+
 <body>
     <div id="header">
         <nav class="container">
@@ -16,17 +18,20 @@
                     <i class="fa-regular fa-user fa-lg"></i> Tài khoản
                 </a>
             </p>
-            <p>
-                <a href="" class="font-icon" style="float: right;">
-                    <i class="fa-solid fa-cart-shopping fa-lg"></i> Giỏ hàng(0)     
-                </a>   
-                <a href="" class="font-icon" style="float: right;">
-                    <i class="fa-solid fa-magnifying-glass fa-lg"></i> Tìm kiếm    
+            <div style="display: flex; float: right; padding: 18px 0;">
+                <a href="" class="font-icon">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i> Tìm kiếm
                 </a>
-            </p>
+                <a href="" class="font-icon">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i> Giỏ hàng
+                </a>
+                <p id="choose"></p>
+            </div>
         </nav>
         <nav>
-            <h1>ANGEL EYES<br><h2>CONTACT LENS</h2></h1>
+            <h1><a href="">ANGEL EYES</a><br>
+                <h2>CONTACT LENS</h2>
+            </h1>
             <ul id="main-menu">
                 <li><a href="">TRANG CHỦ</a></li>
                 <li><a href="">LENS TRONG SUỐT</a></li>
@@ -73,9 +78,17 @@
         </nav>
     </div>
     <script>
-        $(document).ready(function(){
-            $('.sub-menu').parent('li').addClass('has-child')
-        })
+        var a = localStorage.getItem('Giỏ')
+        document.getElementById('choose').innerText = `(${a})`
+
+        // var Choose = () => {
+        //     alert('Bạn thêm vào giỏ hàng thành công')
+        //     n++
+        //     localStorage.setItem('Giỏ hàng', n)
+        //     document.getElementById('choose').innerText = `(${n})`
+        // }
     </script>
+    <script src="jsbasic.js"></script>
 </body>
+
 </html>
